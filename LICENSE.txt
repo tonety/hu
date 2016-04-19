@@ -1,5 +1,8 @@
 Citui@gg.com
 
+mkdir repository		   #创建版本库
+pwd  					   #显示当前目录
+git init				   #把目录编程git可以管理的仓库
 git diff				   #查看修改了文件的什么内容
 git status				   #查看当前仓库状态
 git add file               #添加修改后的文件到暂存区
