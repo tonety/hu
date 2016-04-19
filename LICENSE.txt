@@ -7,9 +7,11 @@ git diff				   #查看修改了文件的什么内容
 git status				   #查看当前仓库状态
 git add file               #添加修改后的文件到暂存区
 git commit -m "修改说明"   #把暂存区的内容提交到版本库
-git checkout -- myfile.txt #清除工作区的内容
+git checkout -- myfile.txt #清除工作区的内容		
+						  #误删文件，而版本库还有记录
 git reset HEAD myfile.txt  #把暂存区的内容回滚到工作区
 git reset --head HEAD^     #把版本库回退到上一个版本
 git log					   #查看历史记录
 git log --pretty=oneline   #按行显示历史记录
 git reflog				   #显示历史commit id
+git rm myfile.txt		   #删除文件
