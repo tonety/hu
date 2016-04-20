@@ -29,3 +29,18 @@ git stash apply			   #把'储藏'的内容恢复，不删除列表
 git stash drop			   #删除'储藏'列表
 git stash apply stash@{0}  #指定恢复内容
 git branch -D <name>	   #强行删除一个还没合并的分支
+git remote -v			   #查看远程库信息
+git clone git@github.com:tonety/hu.git#克隆远程库
+git push origin branch-name#从本地向远程库推送分支
+git pull 				   #拉取远程库，并试图合并
+
+#多人协作的工作模式
+#1.远程库里要有对应的branch-name,最好和本地branch-name一样
+#2.用git branch --set-upstream branch-name origin/branch-name 建立本地分支和远程分支的链接关系(如果创建过则跳过)
+#3.试图git push origin branch-name推送自己的修改
+#4.推送失败，则是远程分支比本地的更新，需要git pull试图合并
+#5.如果合并冲突，则解决冲突，并在本地提交
+#6.没有冲突或者解决冲突后，git push origin branch-name推送
+
+
+
