@@ -44,3 +44,12 @@ git pull 				   #拉取远程库，并试图合并
 
 
 
+git tag <tagname> [commit id] #打标签,默认HEAD,也可以指定
+git tag -a <tagname> -m "xxx" #指定标签信息/说明
+git tagname                   #查看所有标签
+git push origin <tagname>	  #推送一个本地标签
+git push origin --tags		  #推送全部未推送过的本地标签
+git tag -d <tagname>		  #删除一个标签
+git push origin :refs/tags/<tagname>#删除一个远程标签
+
+
