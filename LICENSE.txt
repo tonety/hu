@@ -10,7 +10,7 @@ git commit -m "修改说明"   #把暂存区的内容提交到版本库
 git checkout -- myfile.txt #清除工作区的内容		
 						  #误删文件，而版本库还有记录
 git reset HEAD myfile.txt  #把暂存区的内容回滚到工作区
-git reset --head HEAD^     #把版本库回退到上一个版本
+git reset --hard HEAD^     #把版本库回退到上一个版本
 git log					   #查看历史记录
 git log --pretty=oneline   #按行显示历史记录
 git reflog				   #显示历史commit id
