@@ -1,5 +1,16 @@
 Citui@gg.com
 
+#name,email和github没有任何关系，自定义
+git config --global user.name "tonety"
+git config --global user.email "tonety@gmail.com" 
+
+cd ~/.ssh                  #查看是否已经存在SSH key
+#生成SSh key
+ssh-keygen -t rsa -C "toenty@gmail.com"
+3个回车，密码为空
+ssh -T git@github.com      #测试SSH是否配置成功
+	
+
 mkdir repository		   #创建版本库
 pwd  					   #显示当前目录
 git init				   #把目录编程git可以管理的仓库
@@ -30,6 +41,7 @@ git stash drop			   #删除'储藏'列表
 git stash apply stash@{0}  #指定恢复内容
 git branch -D <name>	   #强行删除一个还没合并的分支
 git remote -v			   #查看远程库信息
+git remote add origin git@github.com:tonety/hu.git#连接远程库
 git clone git@github.com:tonety/hu.git#克隆远程库
 git push origin branch-name#从本地向远程库推送分支
 git pull 				   #拉取远程库，并试图合并
